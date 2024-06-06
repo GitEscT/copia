@@ -10,7 +10,7 @@
       padding: 0;
       box-sizing: border-box;
     }
-    .barra-de-menu {
+    .barra-menu {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -18,39 +18,39 @@
       background-color: #9B7D7D;
       color: #fff;
     }
-    .barra-de-menu .logo img {
+    .menu .logo img {
       height: 50px;
     }
-    .barra-de-menu .menu {
+    .barra-menu .menu {
       display: flex;
       gap: 20px;
     }
-    .barra-de-menu .menu .item-menu a {
+    .barra-menu .menu .item-menu a {
       color: #332525;
       text-decoration: none;
       font-size: 18px;
     }
-    .secao-hero {
+    .area {
       position: relative;
       text-align: center;
       color: white;
     }
-    .secao-hero img {
+    .area img {
       width: 100%;
       height: 70vh;
       object-fit: cover;
     }
-    .secao-hero .texto {
+    .area .texto {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
-    .secao-hero h2 {
+    .area h2 {
       font-size: 48px;
       margin: 0;
     }
-    .secao-hero p {
+    .area p {
       font-size: 30px;
     }
     .botao {
@@ -63,15 +63,15 @@
       font-size: 18px;
       border-radius: 5px;
     }
-    .secao-conteudo {
-      padding: 40px 20px;
+    .conteudo {
+      padding: 180px 60px;
       text-align: center;
     }
-    .secao-conteudo h2 {
+    .conteudo h2 {
       font-size: 36px;
       margin-bottom: 20px;
     }
-    .secao-conteudo p {
+    .conteudo p {
       font-size: 18px;
       margin-bottom: 40px;
     }
@@ -80,7 +80,7 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
       padding: 20px;
-      background-color: #E0F2E9;
+      background-color: #C3C337;
     }
     .grade img {
       width: 100%;
@@ -89,18 +89,20 @@
       object-fit: cover;
       border-radius: 5px;
     }
-    .secao-destaque {
-      background-color: rgb(59, 104, 83);
+    .destaque {
+      background-color: #191900;
       padding: 40px 20px;
       text-align: center;
     }
-    .secao-destaque h2 {
+    .destaque h2 {
       font-size: 36px;
       margin-bottom: 20px;
+      color: #fff;
     }
-    .secao-destaque p {
+    .destaque p {
       font-size: 18px;
       margin-bottom: 40px;
+      color: #fff;
     }
     .grade-icones {
       display: grid;
@@ -109,7 +111,7 @@
     }
     .caixa-icone {
       padding: 20px;
-      background-color: rgb(59, 104, 83);
+      background-color: #191900;
       border-radius: 10px;
       color: white;
       text-align: center;
@@ -122,6 +124,7 @@
     .caixa-icone h3 {
       font-size: 24px;
       margin-bottom: 10px;
+      color: #C3C337;
     }
     .newsletter {
       padding: 180px 20px;
@@ -130,15 +133,17 @@
     .newsletter h3 {
       font-size: 24px;
       margin-bottom: 20px;
+      padding: 30px 10px;
     }
     .newsletter p {
       font-size: 18px;
       margin-bottom: 20px;
+      padding: 70px 10px;
     }
     .newsletter input {
       padding: 10px;
       font-size: 16px;
-      width: 250px;
+      width: 650px;
     }
     .newsletter button {
       padding: 10px 20px;
@@ -150,10 +155,10 @@
       cursor: pointer;
     }
     .rodape {
-      background-color: #333;
+      background-color: #373C05;
       color: #fff;
       text-align: center;
-      padding: 20px;
+      padding: 50px;
     }
     .rodape .icones-sociais {
       display: flex;
@@ -165,13 +170,16 @@
       width: 40px;
       height: 40px;
     }
+    .rodape p {
+      color: #C3C337;
+    }
   </style>
 </head>
 <body>
 
-  <div class="barra-de-menu">
+  <div class="barra-menu">
     <div class="logo">
-      <img src="logo.png" alt="Logo do Hotel Paraíso">
+      <img src="logo.png" alt="logo">
     </div>
     <div class="menu">
       <div class="item-menu"><a href="#">Home</a></div>
@@ -181,8 +189,8 @@
     </div>
   </div>
 
-  <div class="secao-hero">
-    <img src="praia.jpg" alt="Itacaré">
+  <div class="area">
+    <img src="praia.jpg" alt=".">
     <div class="texto">
     <h2>Conheça este paraíso chamado Itacaré</h2>
     <p>"Aconchego, conforto, simpatia e alto astral"</p>
@@ -190,7 +198,7 @@
     </div>
   </div>
 
-  <div class="secao-conteudo">
+  <div class="conteudo">
     <h2>Conheça o Hotel Paraíso</h2>
     <p>Feche os olhos e imagine o paraíso. Um lugar no meio da mata Atlântica e banhado pelo mar, onde você encontra a paz, tranquilidade, conforto e comodidade.</p>
   </div>
@@ -202,22 +210,22 @@
     <img src="paisagem.jpg" alt="Foto 4">
   </div>
 
-  <div class="secao-destaque">
+  <div class="destaque">
     <h2>Único Hotel pé na areia de Itacaré</h2>
     <p>Implantando em uma área completamente arborizada, o Hotel Paraíso é o único hotel pé na areia de Itacaré. Aqui o mar será seu companheiro e você terá as belezas naturais como galeria.</p>
     <div class="grade-icones">
       <div class="caixa-icone">
-        <img src="localização.png" alt="Ícone 1">
+        <img src="location-arrow-solid.svg" alt="Ícone 1">
         <h3>Localização</h3>
         <p>Localização no sul da Bahia, entre o mar e a mata Atlântica, Itacaré tem refrescantes cachoeiras e praias belíssimas, muitas delas tão pequenas que nem aparecem nos mapas!</p>
       </div>
       <div class="caixa-icone">
-        <img src="gift.png" alt="Ícone 2">
+        <img src="gift-solid.svg" alt="Ícone 2">
         <h3>Pacote de Ofertas</h3>
         <p>Sabe aquele descontraído encontro com a família e amigos? Ou um momento relax? Nossa rede conta com uma diversidade de espaços que proporcionam momentos inesquecíveis.</p>
       </div>
       <div class="caixa-icone">
-        <img src="house.png" alt="Ícone 3">
+        <img src="house-solid.svg" alt="Ícone 3">
         <h3>Acomodações</h3>
         <p>Hotel Paraíso possui 29 unidades, divididas entre 11 chalés, 16 amplas suítes e 2 chalés familiares, todas com TV a cabo, frigobar, além da varanda com rede.</p>
       </div>
@@ -233,10 +241,10 @@
 
   <div class="rodape">
     <div class="icones-sociais">
-      <img src="facebook.png" alt="">
-      <img src="twitter.png" alt="">
-      <img src="snapchat.png" alt="">
-      <img src="pinterest.png" alt="">
+      <img src="facebook.svg" alt="">
+      <img src="twitter.svg" alt="">
+      <img src="snapchat.svg" alt="">
+      <img src="pinterest.svg" alt="">
     </div>
     <p>Todos os direitos reservados - Hotel Paraíso - 2023</p>
   </div>
