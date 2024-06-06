@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Paraíso</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .barra-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #9B7D7D;
+      color: #fff;
+    }
+    .menu .logo img {
+      height: 50px;
+    }
+    .barra-menu .menu {
+      display: flex;
+      gap: 20px;
+    }
+    .barra-menu .menu .item-menu a {
+      color: #332525;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .area {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    .area img {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+    }
+    .area .texto {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .area h2 {
+      font-size: 48px;
+      margin: 0;
+    }
+    .area p {
+      font-size: 30px;
+    }
+    .botao {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 20px 30px;
+      background-color: white;
+      color: #333;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+    .conteudo {
+      padding: 180px 60px;
+      text-align: center;
+    }
+    .conteudo h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .conteudo p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+    .grade {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+      background-color: #C3C337;
+    }
+    .grade img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4/2;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .destaque {
+      background-color: #191900;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .destaque h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .destaque p {
+      font-size: 18px;
+      margin-bottom: 40px;
+      color: #fff;
+    }
+    .grade-icones {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .caixa-icone {
+      padding: 20px;
+      background-color: #191900;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+    }
+    .caixa-icone img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+    .caixa-icone h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #C3C337;
+    }
+    .newsletter {
+      padding: 180px 20px;
+      text-align: center;
+    }
+    .newsletter h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      padding: 30px 10px;
+    }
+    .newsletter p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      padding: 70px 10px;
+    }
+    .newsletter input {
+      padding: 10px;
+      font-size: 16px;
+      width: 650px;
+    }
+    .newsletter button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .rodape {
+      background-color: #373C05;
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+    .rodape .icones-sociais {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 10px;
+    }
+    .rodape .icones-sociais img {
+      width: 40px;
+      height: 40px;
+    }
+    .rodape p {
+      color: #C3C337;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="barra-menu">
+    <div class="logo">
+      <img src="logo.png" alt="logo">
+    </div>
+    <div class="menu">
+      <div class="item-menu"><a href="#">Home</a></div>
+      <div class="item-menu"><a href="#">Sobre</a></div>
+      <div class="item-menu"><a href="#">Reservas</a></div>
+      <div class="item-menu"><a href="#">Contato</a></div>
+    </div>
+  </div>
+
+  <div class="area">
+    <img src="praia.jpg" alt=".">
+    <div class="texto">
+    <h2>Conheça este paraíso chamado Itacaré</h2>
+    <p>"Aconchego, conforto, simpatia e alto astral"</p>
+    <a href="" class="botao">Saiba mais</a>
+    </div>
+  </div>
+
+  <div class="conteudo">
+    <h2>Conheça o Hotel Paraíso</h2>
+    <p>Feche os olhos e imagine o paraíso. Um lugar no meio da mata Atlântica e banhado pelo mar, onde você encontra a paz, tranquilidade, conforto e comodidade.</p>
+  </div>
+
+  <div class="grade">
+    <img src="varanda.jpg" alt="Foto 1">
+    <img src="horizonte.jpg" alt="Foto 2">
+    <img src="ondas praia.jpg" alt="Foto 3">
+    <img src="paisagem.jpg" alt="Foto 4">
+  </div>
+
+  <div class="destaque">
+    <h2>Único Hotel pé na areia de Itacaré</h2>
+    <p>Implantando em uma área completamente arborizada, o Hotel Paraíso é o único hotel pé na areia de Itacaré. Aqui o mar será seu companheiro e você terá as belezas naturais como galeria.</p>
+    <div class="grade-icones">
+      <div class="caixa-icone">
+        <img src="location-arrow-solid.svg" alt="Ícone 1">
+        <h3>Localização</h3>
+        <p>Localização no sul da Bahia, entre o mar e a mata Atlântica, Itacaré tem refrescantes cachoeiras e praias belíssimas, muitas delas tão pequenas que nem aparecem nos mapas!</p>
+      </div>
+      <div class="caixa-icone">
+        <img src="gift-solid.svg" alt="Ícone 2">
+        <h3>Pacote de Ofertas</h3>
+        <p>Sabe aquele descontraído encontro com a família e amigos? Ou um momento relax? Nossa rede conta com uma diversidade de espaços que proporcionam momentos inesquecíveis.</p>
+      </div>
+      <div class="caixa-icone">
+        <img src="house-solid.svg" alt="Ícone 3">
+        <h3>Acomodações</h3>
+        <p>Hotel Paraíso possui 29 unidades, divididas entre 11 chalés, 16 amplas suítes e 2 chalés familiares, todas com TV a cabo, frigobar, além da varanda com rede.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="newsletter">
+    <h3>Newsletter</h3>
+    <p>Assine nossa newsletter para se manter atualizado com nossos serviços e a programação de nossas atividades culturais.</p>
+    <input type="email" placeholder="Email">
+    <button>Cadastrar</button>
+  </div>
+
+  <div class="rodape">
+    <div class="icones-sociais">
+      <img src="facebook.svg" alt="">
+      <img src="twitter.svg" alt="">
+      <img src="snapchat.svg" alt="">
+      <img src="pinterest.svg" alt="">
+    </div>
+    <p>Todos os direitos reservados - Hotel Paraíso - 2023</p>
+  </div>
+</body>
+</html>
